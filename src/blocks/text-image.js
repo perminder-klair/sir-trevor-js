@@ -2,6 +2,8 @@
 
 /*
  Block Text and Image
+ Make sure you initialize(loaded) following dependencies in your system to make this block work:
+ fontawesome
  */
 
 var _ = require('../lodash');
@@ -60,7 +62,7 @@ module.exports = Block.extend({
     droppable: true,
     uploadable: true,
 
-    icon_name: 'iframe',
+    icon_name: '<i class="fa fa-newspaper-o"></i>',
 
     editorHTML: function() {
         return template(this);
@@ -69,9 +71,12 @@ module.exports = Block.extend({
     loadData: function(data){
         this.getTextBlock().html(stToHTML(data.text, this.type));
         this.$('.js-title-input').val(data.title);
+        this.$('.js-image-alt-input').val(data.imagealt);
         this.$('.js-image-align').val(data.imagealign);
+        this.$('.js-link-text-input').val(data.linktext);
+        this.$('.js-link-url-input').val(data.linkurl);
         // Create our image tag
-        this.$editor.html($('<img>', { src: data.file.url }));
+        this.$('.img-preview').html($('<img>', { src: data.file.url }));
     },
 
     //beforeBlockRender: function () {
