@@ -8,7 +8,7 @@ var Locales = {
             'delete': 'Delete?',
             'drop': 'Drag __block__ here',
             'paste': 'Or paste URL here',
-            'upload': 'choose a file',
+            'upload': '...or choose a file',
             'close': 'close',
             'position': 'Position',
             'wait': 'Please wait...',
