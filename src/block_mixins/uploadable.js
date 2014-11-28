@@ -15,7 +15,11 @@ module.exports = {
     this.withMixin(require('./ajaxable'));
 
     this.upload_options = Object.assign({}, config.defaults.Block.upload_options, this.upload_options);
-    this.$inputs.append(_.template(this.upload_options.html, this));
+    if (this.$('.upload-area').length !== 0) {
+        this.$('.upload-area').append(_.template(this.upload_options.html, this));
+    } else {
+        this.$inputs.append(_.template(this.upload_options.html, this));
+    }
   },
 
   uploader: function(file, success, failure){

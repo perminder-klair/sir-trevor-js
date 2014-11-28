@@ -5,6 +5,6 @@
 $(function(){
   new SirTrevor.Editor({
     el: $(".js-sir-trevor-instance"),
-    blockTypes: ["Text", "List", "Video", "Quote", "Iframe"]
+    blockTypes: ["Text", "List", "Video", "Quote", "Iframe", "Textimage"]
   });
 });

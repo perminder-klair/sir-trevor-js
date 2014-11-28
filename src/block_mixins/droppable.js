@@ -18,8 +18,13 @@ module.exports = {
 
     var drop_html = $(_.template(this.drop_options.html)({ block: this, _: _ }));
 
-    this.$editor.hide();
+    //this.$editor.hide();
     this.$inputs.append(drop_html);
+      if (this.$('.upload-area').length !== 0) {
+          this.$('.upload-area').append(drop_html);
+      } else {
+          this.$inputs.append(drop_html);
+      }
     this.$dropzone = drop_html;
 
     // Bind our drop event

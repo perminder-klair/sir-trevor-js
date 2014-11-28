@@ -26,6 +26,7 @@ Full documentation can be found [here](http://madebymany.github.io/sir-trevor-js
 6. [Django](https://github.com/philippbosch/django-sirtrevor)
 7. [Yii Framework](https://github.com/DrMabuse23/yii2-sir-trevor-js)
 8. [Symfony2](https://github.com/EDSI-Tech/SirTrevorBundle)
+9. [Yii1 - Yii2 Framework](https://github.com/perminder-klair/yii2-sir-trevor-js)
 
 ## Custom blocks
 

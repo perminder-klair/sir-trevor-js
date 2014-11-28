@@ -62,8 +62,7 @@
   margin-bottom: 0.3em; }
 
 .st-text-block,
-.st-block input[type="text"],
-.st-block textarea {
+.st-block input[type="text"] {
   font-size: inherit;
   margin: 0;
   padding: 0.3em 0; }
@@ -76,19 +75,24 @@
 .st-block [contenteditable="true"]:focus,
 .st-block input[type="text"],
 .st-block input[type="text"]:active,
-.st-block input[type="text"]:focus,
-.st-block textarea,
-.st-block textarea:hover,
-.st-block textarea:active {
-  outline: none;
-  border: none; }
+.st-block input[type="text"]:focus {
+  outline: none; }
 
 .st-block input[type="text"],
 .st-block input[type="text"]:active,
-.st-block input[type="text"]:focus {
+.st-block input[type="text"]:focus,
+.st-block .st-text-block,
+.st-block select {
   color: #42474b;
   border: 0.1em solid #d4d4d4;
-  padding: .6em; }
+  padding: 6px 12px;
+  font-size: 16px;
+  display: block;
+  height: 34px;
+  background-color: #fff; }
+
+.st-block select {
+  height: 46px; }
 
 .st-errors {
   background-color: #ffe1e4;
@@ -504,5 +508,34 @@ ul.st-text-block {
 
 .st-format-btn--Unlink {
   text-decoration: line-through; }
+
+.st-text-image {
+  width: 100%;
+  display: table; }
+  .st-text-image .row {
+    width: 100%;
+    display: table;
+    clear: both;
+    margin: 10px 0;
+    border-bottom: 2px solid #d4d4d4; }
+  .st-text-image .col-12, .st-text-image .col-9, .st-text-image .col-6, .st-text-image .col-3 {
+    float: left;
+    margin-bottom: 10px; }
+  .st-text-image .col-3 {
+    width: 25%; }
+  .st-text-image .col-6 {
+    width: 50%; }
+  .st-text-image .col-9 {
+    width: 75%; }
+  .st-text-image .col-12 {
+    width: 100%; }
+  .st-text-image .img-preview {
+    height: 160px; }
+    .st-text-image .img-preview img {
+      max-width: 100%;
+      height: auto;
+      max-height: 100%; }
+  .st-text-image input[type="text"], .st-text-image select {
+    min-width: 70%; }
 
 /*# sourceMappingURL=sir-trevor.css.map */

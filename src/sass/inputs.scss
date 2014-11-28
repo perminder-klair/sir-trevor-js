@@ -6,8 +6,7 @@
 
 // Generic styles
 .st-text-block,
-.st-block input[type="text"],
-.st-block textarea {
+.st-block input[type="text"] {
   font-size: inherit;
   margin: 0; padding: 0.3em 0;
 }
@@ -21,19 +20,25 @@
 .st-block [contenteditable="true"]:focus,
 .st-block input[type="text"],
 .st-block input[type="text"]:active,
-.st-block input[type="text"]:focus,
-.st-block textarea,
-.st-block textarea:hover,
-.st-block textarea:active {
+.st-block input[type="text"]:focus {
   outline: none;
-  border: none;
 }
 
 .st-block input[type="text"],
 .st-block input[type="text"]:active,
-.st-block input[type="text"]:focus {
-  // width: 100%;
+.st-block input[type="text"]:focus,
+.st-block .st-text-block,
+.st-block select {
+  //min-width: 50%;
   color: #42474b;
   border: 0.1em solid #d4d4d4;
-  padding:.6em;
+  padding: 6px 12px;
+  font-size: 16px;
+  display: block;
+  height: 34px;
+  background-color: #fff;
+}
+
+.st-block select {
+  height: 46px;
 }
