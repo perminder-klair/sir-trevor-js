@@ -1,3 +1,5 @@
+"use strict";
+
 /*
  Wysihtml Editor Block
  Make sure you initialize(loaded) following dependencies in your system to make this block work:
