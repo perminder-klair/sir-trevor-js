@@ -8,6 +8,7 @@ module.exports = {
     List: require('./unordered-list'),
     Tweet: require('./tweet'),
     Video: require('./video'),
-    Textimage: require('./text-image'),
-    Wysihtml: require('./wysihtml')
+    Wysihtml: require('./wysihtml'),
+    Redactor: require('./redactor'),
+    Textimage: require('./text-image') 
 };
