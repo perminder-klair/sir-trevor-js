@@ -28,6 +28,6 @@ module.exports = Block.extend({
     },
 
     loadData: function(data){
-        this.getTextBlock().html(stToHTML(data.text, this.type));
+        this.getTextBlock().html(stToHTML(data[data.length-1], this.type));
     }
 });
