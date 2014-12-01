@@ -77,7 +77,7 @@ module.exports = Block.extend({
         this.$('.js-link-url-input').val(data.linkurl);
         // Create our image tag
         if (typeof data.file.url != 'undefined') {
-            this.$('.img-preview').html($('<img>', { src: data.file.url }));
+            this.$('.img-preview').html($('<img>', { src: data.file.url })); 
         }
     },
 
