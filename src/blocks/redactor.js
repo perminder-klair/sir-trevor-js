@@ -18,7 +18,7 @@ module.exports = Block.extend({
 
     editorHTML: function() {
         timeStamp = Date.now();
-        return '<div id="redactor-editor-' + timeStamp + '" class="st-required st-text-block" contenteditable="true"></div>';
+        return '<textarea id="redactor-editor-' + timeStamp + '" name="redactor" class="st-required st-input-string st-redactor-input"></textarea>';
     },
 
     icon_name: '<i class="fa fa-pencil-square-o"></i>',
@@ -28,6 +28,6 @@ module.exports = Block.extend({
     },
 
     loadData: function(data){
-        this.getTextBlock().html(stToHTML(data[data.length-1], this.type));
+        this.$('.jst-redactor-input').val(data.redactor);
     }
 });
