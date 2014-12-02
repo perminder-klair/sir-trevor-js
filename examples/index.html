@@ -38,13 +38,10 @@
 <script src="../node_modules/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
 <script src="../sir-trevor.debug.js" type="text/javascript" charset="utf-8"></script>
 <script src="../locales/de.js" type="text/javascript" charset="utf-8"></script>
-<link href="http://netcall.dev/admin/assets/f1f82a93/redactor.css" rel="stylesheet">
-<script src="http://netcall.dev/admin/assets/f1f82a93/redactor.js"></script>
 <script type="text/javascript" charset="utf-8">
     $(function () {
         SirTrevor.config.debug = true;
         SirTrevor.config.language = "en";
-        SirTrevor.config.defaults.uploadUrl = "http://netcall.dev/site/test";
 
         SirTrevor.setBlockOptions("Text", {
             onBlockRender: function () {
@@ -63,8 +60,7 @@
                 "Video",
                 "Tweet",
                 "Wysihtml",
-                "Textimage",
-                "Redactor"
+                "Textimage"
             ]
         });
 
