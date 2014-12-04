@@ -63,31 +63,29 @@ var Locales = {
     }
 };
 
-if (window.i18n === undefined || window.i18n.init === undefined) {
+if (window.i18n === undefined) {
     // Minimal i18n stub that only reads the English strings
     utils.log("Using i18n stub");
     window.i18n = {
-        t: function (key, options) {
+        t: function(key, options) {
             var parts = key.split(':'), str, obj, part, i;
 
             obj = Locales[config.language];
 
-            for (i = 0; i < parts.length; i++) {
+            for(i = 0; i < parts.length; i++) {
                 part = parts[i];
 
-                if (!_.isUndefined(obj[part])) {
+                if(!_.isUndefined(obj[part])) {
                     obj = obj[part];
                 }
             }
 
             str = obj;
 
-            if (!_.isString(str)) {
-                return "";
-            }
+            if (!_.isString(str)) { return ""; }
 
             if (str.indexOf('__') >= 0) {
-                Object.keys(options).forEach(function (opt) {
+                Object.keys(options).forEach(function(opt) {
                     str = str.replace('__' + opt + '__', options[opt]);
                 });
             }
@@ -99,9 +97,8 @@ if (window.i18n === undefined || window.i18n.init === undefined) {
     utils.log("Using i18next");
     // Only use i18next when the library has been loaded by the user, keeps
     // dependencies slim
-    i18n.init({
-        resStore: Locales, fallbackLng: config.language,
-        ns: {namespaces: ['general', 'blocks'], defaultNs: 'general'}
+    i18n.init({ resStore: Locales, fallbackLng: config.language,
+        ns: { namespaces: ['general', 'blocks'], defaultNs: 'general' }
     });
 }
 
