@@ -1,6 +1,7 @@
 "use strict";
 
 var _ = require('../lodash');
+var $ = require('jquery');
 var config = require('../config');
 var utils = require('../utils');
 
@@ -11,7 +12,8 @@ module.exports = {
   initializePastable: function() {
     utils.log("Adding pastable to block " + this.blockID);
 
-    this.paste_options = Object.assign({}, config.defaults.Block.paste_options, this.paste_options);
+    this.paste_options = Object.assign(
+      {}, config.defaults.Block.paste_options, this.paste_options);
     this.$inputs.append(_.template(this.paste_options.html, this));
 
     this.$('.st-paste-block')

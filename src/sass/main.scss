@@ -1,22 +1,22 @@
-@import 'bourbon/bourbon';
+@import 'bourbon';
 
-@import '_variables.scss';
+@import '_variables';
 
-@import 'base.scss';
-@import 'inputs.scss';
+@import 'base';
+@import 'inputs';
 
-@import 'errors.scss';
+@import 'errors';
 
 // Block Controls
-@import 'block-control.scss';
+@import 'block-control';
 
 // Blocks
-@import 'block.scss';
-@import 'block-positioner.scss';
-@import 'block-ui.scss';
+@import 'block';
+@import 'block-positioner';
+@import 'block-ui';
 
 // Format Bar
-@import 'format-bar.scss';
+@import 'format-bar';
 
 //Customer Blocks
 @import "text-image-block";
