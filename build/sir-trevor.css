@@ -517,7 +517,7 @@ ul.st-text-block {
   text-decoration: line-through; }
 
 .st-text-image {
-  width: 99%;
+  width: 100%;
   display: table; }
   .st-text-image .row {
     width: 100%;
