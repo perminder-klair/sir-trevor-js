@@ -58,6 +58,9 @@ var Locales = {
                 'title': "Text and Image",
                 'heading_field': "Title",
                 'image_align': "Image Align"
+            },
+            headingtext: {
+                'title': "Heading and Text"
             }
         }
     }
