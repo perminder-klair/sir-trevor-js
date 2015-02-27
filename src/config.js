@@ -28,6 +28,7 @@ module.exports = {
   skipValidation: false,
   version: "0.4.0",
   language: "en",
+  disableScroll: false,
 
   instances: [],
 
